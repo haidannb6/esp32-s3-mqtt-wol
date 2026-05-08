@@ -159,14 +159,7 @@ if (isset($_GET['action'])) {
         wakeBtn.innerHTML = `<svg id="iconSvg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${powerPath}</svg>`;
         wakeBtn.disabled = true;
         
-        const client = mqtt.connect('wss://nb6.icu/mqtt', {
-            username: 'web_client',
-            //The password you set for web_client/你为web_client设置的密码
-            password: 'Your password',
-            reconnectPeriod: 5000,
-            connectTimeout: 30000,
-            clean: true
-        });
+        const client = mqtt.connect('wss://nb6.icu/mqtt');
 
         fetch('?action=get')
             .then(r => r.json())
