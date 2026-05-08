@@ -162,7 +162,7 @@ if (isset($_GET['action'])) {
         const client = mqtt.connect('wss://nb6.icu/mqtt', {
             username: 'web_client',
             //The password you set for web_client/你为web_client设置的密码
-            password: 'Your password'
+            password: 'Your password',
             reconnectPeriod: 5000,
             connectTimeout: 30000,
             clean: true
