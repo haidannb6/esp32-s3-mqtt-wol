@@ -102,7 +102,7 @@ if (isset($_GET['action'])) {
         <button id="wakeBtn" class="btn-power" <?php echo $is_auth ? '' : 'disabled'; ?>></button>
     </div>
     <div id="footerArea" class="footer">
-        <a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2026006693号</a>
+        <a href="https://beian.miit.gov.cn/" target="_blank">ICP备8888888888号</a>
     </div>
 
     <script>
