@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+//Whitelist IP, change it to your real IP/白名单ip，改为你的真实ip
 $allowed_ip = '1.1.1.1'; 
 
 $client_ip = $_SERVER['REMOTE_ADDR']; 
